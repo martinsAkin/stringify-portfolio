@@ -24,14 +24,14 @@ const ToggleMode = ({currentSection, setCurrentSection}: ToggleModeProps) => {
  return(
    <div>
        {largeScreen? (
-         <div className="rounded-[2.5rem] ml-[10rem] flex bg-gray-800 gap-4 p-[0.5rem]">
+         <div className="rounded-[2.5rem] ml-[10rem] flex bg-gray-800 gap-4 p-[0.5rem]font-figtree">
            <button onClick={()=> setCurrentSection('caseStudy')}  className={currentSection === 'caseStudy'? "p-2 pr-4 pl-4 bg-slate-600 rounded-[2.5rem] w-[45%]" : ''}>Full</button>
 
            <button onClick={()=> setCurrentSection('design')}  className={currentSection === 'design'? "p-2 pr-4 pl-4 bg-slate-600 rounded-[2.5rem]" : ''}>Design</button>
 
          </div>
        ) : (
-         <div className="rounded-[2.5rem] flex bg-gray-800 gap-4 p-[0.5rem]">
+         <div className="rounded-[2.5rem] flex bg-gray-800 gap-4 p-[0.5rem] font-figtree">
              <button onClick={()=> setCurrentSection('caseStudy')}  className={currentSection === 'caseStudy'? "p-2 pr-4 pl-4 bg-slate-600 rounded-[2.5rem] w-[45%]" : ''}>Full</button>
 
              <button onClick={()=> setCurrentSection('design')}  className={currentSection === 'design'? "p-2 pr-4 pl-4 bg-slate-600 rounded-[2.5rem]" : ''}>Design</button>

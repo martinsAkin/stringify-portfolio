@@ -55,7 +55,7 @@ const StoryBoard = ({storyImageUrl, storyDescription}: StoryBoardProps) => {
    return(
       <div>
             <Image src={storyImageUrl} alt="picture" />
-            <p className="text-[15px] inline-block mt-[0.5rem]">{storyDescription}</p>
+            <p className="text-[15px] inline-block mt-[0.5rem] md:text-2xl">{storyDescription}</p>
       </div>
    )
 }
@@ -68,24 +68,24 @@ const Audience = ({audienceImage, audienceName, audienceTitle, audienceBio, goal
                <Image src={audienceImage} className="h-[100%] w-[55rem] rounded-tl-[10px] rounded-bl-[15px]" alt="userImage"/>
             </div>
             <div className="p-[1rem]">
-               <span className="font-bold text-[17px]">{audienceName}</span>
-               <span>{audienceTitle}</span>
+               <span className="font-bold text-[17px] md:text-3xl">{audienceName}</span>
+               <span className="mb-4 block md:text-2xl">{audienceTitle}</span>
                <hr />
-               <span>{audienceBio}</span>
+               <span className="block mt-4 md:text-[1.5rem]">{audienceBio}</span>
             </div>
          </section>
 
          <section className="flex gap-4 m-[1rem]">
             <div className="border border-white bg-gray-900 rounded-lg p-[1rem]">
-               <h1 className="font-bold text-[20px]">Goals</h1>
-               <ol className="mt-[0.5rem] ml-8 list-disc">
+               <h1 className="font-bold text-[20px] md:text-2xl">Goals</h1>
+               <ol className="mt-[0.5rem] ml-8 list-disc md:text-2xl">
                   <li>{goal1}</li>
                   <li>{goal2}</li>
                </ol>
             </div>
             <div className="border border-white bg-gray-900 rounded-lg p-[1rem]">
-               <h1 className="font-bold text-[20px]">Pain points</h1>
-               <ol className="mt-[0.5rem] ml-8 list-disc">
+               <h1 className="font-bold text-[20px] md:text-2xl">Pain points</h1>
+               <ol className="mt-[0.5rem] ml-8 list-disc md:text-2xl">
                   <li>{painpoint1}</li>
                   <li>{painpoint2}</li>
                </ol>
@@ -107,7 +107,7 @@ const Points = ({number, point}:PointsProps) => {
    return(
       <div className="flex flex-col items-center">
          <div className="rounded-[50%] font-bold text-red-600 bg-amber-400 w-6 text-center mb-[1rem]">{number}</div>
-         <section className="text-[13px]">
+         <section className="text-[13px] md:text-2xl">
             {point}
          </section>
       </div>
@@ -118,7 +118,7 @@ const Points2 = ({number, point}:PointsProps) => {
    return(
       <div className="flex gap-[0.5rem] items-center">
          <div className="rounded-[50%] font-bold text-red-600 bg-amber-400 w-8 h-10 p-[0.5rem] text-center">{number}</div>
-         <section className="text-[13px]">
+         <section className="text-[13px] md:text-2xl">
             {point}
          </section>
       </div>
@@ -127,11 +127,11 @@ const Points2 = ({number, point}:PointsProps) => {
 
 const MyQuraCaseStudy = () => {
   return (
-    <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem]">
-        <section className="text-center">
+    <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem] font-poppins">
+        <section className="text-center pr-8 pl-8">
             <Image src={mqLogo} className="w-[5rem] h-[5rem] mx-auto md:w-[15rem] md:h-[15rem]" alt="pageLogo"/>
-            <span className='text-gray-400 text-[15px]'>MYCARE ASSISTANT (MYQURA) - 2024</span>
-            <h1 className="mt-4">
+            <span className='text-gray-400 text-[15px] font-brunoAce md:text-3xl'>MYCARE ASSISTANT (MYQURA) - 2024</span>
+            <h1 className="mt-4 font-figtree md:text-4xl">
               <strong className="block">Care Service App for</strong>
               <i> Care Professionals & Patients</i>
             </h1>
@@ -140,8 +140,8 @@ const MyQuraCaseStudy = () => {
                <ImageFrame imageSrc={frame1}/>
             </div>
 
-         <section className="m-[2rem] flex flex-col gap-[3rem] pb-[3rem]">
-            <div className="flex md:flex gap-8 md:flex-col text-[15px] text-gray-600">
+         <section className="m-[3rem] flex flex-col gap-[3rem] pb-[3rem] md:flex md:flex-row md:ml-[10rem] md:mr-[5rem]">
+            <div className="flex md:flex gap-8 md:flex-col text-[15px] text-gray-400 md:text-[18px]">
                 <section className="flex flex-col gap-6 list-none">
                  <div>
                    <li className="font-bold text-white">Client:</li>
@@ -167,8 +167,8 @@ const MyQuraCaseStudy = () => {
                </div>
             </div>
 
-            <div className="text-[16px]">
-               <h2 className="font-bold">Overview:</h2>
+            <div className="text-[16px] md:text-[18px] md:pr-[2rem]">
+               <h2 className="font-bold font-figtree text-white">Overview:</h2>
                <span>
                    MyCare Assistant is a leading Nigerian home healthcare service provider dedicated to delivering comprehensive and compassionate care.  Driven by a vision of creating a robust and accessible health solution, MyCare Assistant offers a diverse range of services tailored to meet the unique needs of individuals requiring care in the comfort of their own homes. This led to the foundation of the app: “MyQura by MyCare Assistant”
                </span>
@@ -177,24 +177,24 @@ const MyQuraCaseStudy = () => {
                </span>
             </div>
          </section>
-         <section className="p-[2rem] bg-gray-900 text-[16px]">
-                  <h1 className="mt-[2rem] mb-[1.5rem] text-3xl font-bold">THE PROBLEM</h1>
+         <section className="p-[2rem] bg-gray-900 text-[16px] md:pl-[5rem] md:text-2xl">
+                  <h1 className="mt-[2rem] mb-[1.5rem] text-3xl font-bold font-figtree">THE PROBLEM</h1>
                   <span>
                      The relative of the founder of MyCare Assistant suffered a major health challenge, and the inadequate and costly support services led to her death. This led to the birth of MyCare Assistant, the company grew and handled all their operations manually. However, as the business grew and the volume of Clients and Care Professionals increased, this manual approach became unsustainable. To address the challenges with the manual approach, MyCare Assistant recognised the necessity of transitioning from manual operations to a digital platform.
                   </span>
 
-                  <h1 className="mt-[2rem] mb-[1.5rem] text-3xl font-bold">THE SOLUTION</h1>
+                  <h1 className="mt-[2rem] mb-[1.5rem] text-3xl font-bold font-figtree">THE SOLUTION</h1>
                   <span>
                      After thoroughly understanding MyCare Assistant&#39;s business processes, we determined that a mobile application for both clients and care professionals was the ideal solution.  This app empowers clients to monitor care professional activities, including clock-in and clock-out times, providing transparency and peace of mind.  Care professionals, in turn, can use the app to manage their schedules, accepting or declining care service requests based on their availability and preferences.  Furthermore, the Care Professional app provides access to affordable courses designed to enhance their skill sets and professional development.
                   </span>
          </section>
 
          <div className="m-[2rem]">
-            <h1 className="text-3xl font-bold">STORY BOARDING</h1>
-            <span className="text-[15px]">In order to seamlessly achieve the business and design goals, the illustration below represents the process I went through:</span>
+            <h1 className="text-3xl font-bold font-figtree">STORY BOARDING</h1>
+            <span className="text-[15px] md:text-2xl">In order to seamlessly achieve the business and design goals, the illustration below represents the process I went through:</span>
          </div>
 
-         <section className="p-[2rem] bg-gray-800 grid grid-cols-1 gap-[1.5rem]">
+         <section className="p-[2rem] bg-gray-800 grid grid-cols-1 gap-[1.5rem] md:grid md:grid-cols-3">
                <StoryBoard storyImageUrl={storyboard1} storyDescription="Oluwatobi is living in Canada with her family" />
                <StoryBoard storyImageUrl={storyboard2} storyDescription="Oluwatobi&#39;s Dad has been sick with an ailment, and he has been rushed to the hospital" />
                <StoryBoard storyImageUrl={storyboard3} storyDescription="Oluwatobi&#39;s Dad condition has gotten better and has been discharged from the hospital" />
@@ -207,8 +207,8 @@ const MyQuraCaseStudy = () => {
          </section>
 
          <section className="m-[2rem]">
-            <h1 className="text-5xl mb-[1rem]">TARGET AUDIENCE</h1>
-            <span className="text-[15px]">In order to seamlessly achieve the business and design goals, the illustration below represents the process I went through:</span>
+            <h1 className="text-5xl mb-[1rem] font-figtree">TARGET AUDIENCE</h1>
+            <span className="text-[15px] md:text-2xl">In order to seamlessly achieve the business and design goals, the illustration below represents the process I went through:</span>
          </section>
          <section className="pt-[3rem] pl-[1rem] pr-[1rem] grid grid-cols-1 gap-[2.5rem]">
             <Audience audienceImage={Oluwatobi} audienceName="Oluwatobi Hassan, 28" audienceTitle="Software Engineer" audienceBio="Oluwatobi is a Software Engineer in Canada, She loves her family so much and the well being of her family is her priority. Recently she got the news that her father back in Nigeria, isn’t feeling too well. Although he has been discharged from the hospital but he needs to be monitored." goal1="To get a core healthcare professional to takecare of her father." goal2="To momitor her father&#39;s health from Canada" painpoint1="Lack of skilled & well trained care professionals to handle her father&#39;s condition" painpoint2="Not being able to monitor care professionals."/>
@@ -217,8 +217,8 @@ const MyQuraCaseStudy = () => {
          </section>
 
          <div className="ml-8 mt-16 mr-[1.5rem]">
-            <h1 className="font-bold text-3xl">MYQURA CLIENT</h1>
-            <span className="inline-block mt-4 mb-4 text-[13px]">The MyQura Client app was designed intentionally to ensure that the user&#39;s need are been catered for, and they enjoy a seamless experience when they order for a care service.</span>
+            <h1 className="font-bold text-3xl md:text-4xl font-figtree">MYQURA CLIENT</h1>
+            <span className="inline-block mt-4 mb-4 text-[13px] md:text-2xl">The MyQura Client app was designed intentionally to ensure that the user&#39;s need are been catered for, and they enjoy a seamless experience when they order for a care service.</span>
 
                <div className="flex gap-4">
                   <MobileScreens imageSrc={mobile1}/>
@@ -240,13 +240,13 @@ const MyQuraCaseStudy = () => {
             
          </section>
 
-         <section className="flex m-6 gap-[1rem]">
+         <section className="flex m-6 gap-[1rem] md:gap-8 md:m-[4rem]">
             <div className="flex flex-col w-20rem gap-4">
-               <Image src={homescreen1} height={200} alt="image"/>
-               <Image src={ArrowUpVector} className="ml-[3rem]" width={75} alt="vector"/>
-               <Image src={homescreen2} height={200} alt="image"/>
+               <Image src={homescreen1} height={200} className="md:h-[20rem] md:w-[15rem]" alt="image"/>
+               <Image src={ArrowUpVector} className="ml-[3rem] md:ml-[6rem]" width={75} alt="vector"/>
+               <Image src={homescreen2} className="md:h-[20rem] md:w-[15rem]" height={200} alt="image"/>
             </div>
-            <div className="grid grid-cols-1 gap-4 w-[15rem]">
+            <div className="grid grid-cols-1 gap-4 w-[15rem] md:w-dvw">
                <Points2 number={1} point="A warm welcome from the homescreen to help personalize the experience."/>
                <Points2 number={2} point="The messages can be easily accessible in the case of support cases."/>
                <Points2 number={3} point="There is no second guessing of how to get started, the card explains the first thing to do."/>
@@ -255,9 +255,9 @@ const MyQuraCaseStudy = () => {
             </div>
          </section>
 
-         <div className="m-6">
-            <h1 className="font-bold text-3xl mb-6">MYQURA CLIENT</h1>
-            <span>The MyQura Client app was designed to intentionally ensure that the user&#39;s needs are been catered for, and they enjoy a seamless experience when thry order fir a care service.</span>
+         <div className="m-6 md:m-[3rem]">
+            <h1 className="font-bold text-3xl mb-6 md:text-4xl font-figtree">MYQURA CLIENT</h1>
+            <span className="md:text-2xl">The MyQura Client app was designed to intentionally ensure that the user&#39;s needs are been catered for, and they enjoy a seamless experience when thry order fir a care service.</span>
 
             <div className="grid grid-cols-4 gap-6 mt-6 mb-2">
                <MobileScreens imageSrc={client1} />
@@ -268,7 +268,7 @@ const MyQuraCaseStudy = () => {
             <div className="flex justify-center">
                <Image src={spiralDownVector} height={75} alt=""/>
             </div>
-            <section className="grid grid-cols-2">
+            <section className="grid grid-cols-2 md:gap-[2rem]">
                <Points number={1} point="I endured that from the onboarding screens, there is a feel of human connection and care."/>
                <Points number={2} point="It&#39;s compulsory for every care professional to be verified so the company is confident of their care professionals."/>
                <Points number={3} point="The cards makes the most important information available to the care professionals."/>
@@ -279,13 +279,13 @@ const MyQuraCaseStudy = () => {
             </section>
          </div>
           
-          <section className="m-6 mt-[5rem] mb-[5rem]">
-            <h1 className="font-bold text-3xl mb-4">ADMIN PORTAL</h1>
-            <span className="text-[15px] inline-block mb-[2rem]">The admin portal was designed to manage requests from the clients as well as the care professionals. To ensure proficient services are been delivered appropriately</span>
+          <section className="m-6 mt-[5rem] mb-[5rem] md:m-[3rem] md:mt-[5rem]">
+            <h1 className="font-bold text-3xl mb-4 md:text-4xl font-figtree">ADMIN PORTAL</h1>
+            <span className="text-[15px] inline-block mb-[2rem] md:text-2xl">The admin portal was designed to manage requests from the clients as well as the care professionals. To ensure proficient services are been delivered appropriately</span>
 
-              <Image src={adminPortal} height={200} className="mx-auto" alt="image" /> 
+              <Image src={adminPortal} height={200} className="mx-auto md:w-[40rem] h-[25rem]" alt="image" /> 
           </section>
-          <section className="bg-gray-700 p-6 grid grid-col-1 gap-8 mb-[5rem]">
+          <section className="bg-gray-700 p-6 grid grid-col-1 gap-8 mb-[5rem] md:grid md:grid-cols-2">
                <RetrospectBoxes number="01" heading="Designing for Social Impact">
                   A deep dive into the healthcare sector revealed the urgent need for user-centered solutions in Nigeria and surrounding regions. This project channeled my passion for designing for social impact.
                </RetrospectBoxes>

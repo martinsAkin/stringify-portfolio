@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-import NavBArEntities from './MenubarIcon'
 import mockupImage from "../images/MOCKUP_5.jpg"
 import tantalizerLogo from "../images/tantalizerLogo.png"
 import tantalizer2 from '../images/TantalizerHomePage2.png'
@@ -11,7 +10,6 @@ import breakfastImage from "../images/breakfast.png"
 import LearnMore from './LearnMore'
 import footerImageTantalizer from "../images/footerImage.png"
 import Footer from './Footer'
-// import { Poppins } from 'next/font/google'
 
 interface ThumbnailBgProps{
  imageUrl: string | StaticImageData
@@ -65,13 +63,13 @@ const ThumbnailBg3 = ({imageUrl, logoUrl}: ThumbnailBg3Props) => {
 
 const TantalizerDesign = () => {
   return (
-    <div>
+    <div className="font-poppins">
        {/* <NavBArEntities /> */}
 
        <Image src={tantalizerLogo} className="mx-auto md:w-36 lg:w-[10rem] mt-[2.5rem]" width={120} height={120} alt="tantalizerLogo"/>
-        <span className={`text-amber-100 flex justify-center pt-4 text-2xl md:text-2xl`}>TANTALIZER - 2023</span>
+        <span className={`text-amber-100 flex justify-center pt-4 text-2xl md:text-2xl font-brunoAce`}>TANTALIZER - 2023</span>
         <section className="pt-8 text-white flex flex-col justify-center text-center gap-6 items-center pb-[2.5rem] lg:mb-8">
-          <p className={`font-serif`}>
+          <p className='font-figtree'>
             <span className="font-bold text-3xl md:text-4xl lg:text-5xl">Resturant Website</span> <br />
             <span className="italic text-2xl md:text-3xl lg:text-4xl">Redesign</span>
           </p>
@@ -79,7 +77,7 @@ const TantalizerDesign = () => {
         </section>
 
         <section className='mb-[4rem]'>
-          <h1 className='font-bold text-[2rem] ml-[5rem] md:ml-[18rem] inline-block mb-[1.5rem]'>HOME PAGE</h1>
+          <h1 className='font-bold text-[2rem] ml-[5rem] md:ml-[18rem] inline-block mb-[1.5rem] font-figtree'>HOME PAGE</h1>
 
           <div className='flex ml-6 mr-6 gap-[1.5rem] md:ml-0 md:mr-0 flex-col md:flex-row md:gap-[3rem] justify-center'>
            <ThumbnailBg2 imageUrl={tantalizer2}/>

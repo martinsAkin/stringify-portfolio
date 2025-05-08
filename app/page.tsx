@@ -20,9 +20,9 @@ export default function Home() {
         <Link href="/myQura">
           <NavBtn location="Visit MyQura Page" />
         </Link>
-        {/* <Link href="/tantalizer">
-        <NavBtn location="Visit Tantalizer Page" />
-        </Link> */}
+        <Link href="/rock-realty">
+        <NavBtn location="Visit Rock Realty Page" />
+        </Link>
 
         
     </div>

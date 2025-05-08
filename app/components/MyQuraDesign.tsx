@@ -59,8 +59,8 @@ const MyQuraDesign = () => {
 
           <section className="text-center">
             <Image src={mqLogo} className="w-[5rem] h-[5rem] mx-auto md:w-[15rem] md:h-[15rem]" alt="pageLogo"/>
-            <span className='text-gray-400 text-[15px]'>MYCARE ASSISTANT (MYQURA) - 2024</span>
-            <h1 className="mt-4">
+            <span className='text-gray-400 text-[15px] font-brunoAce md:text-2xl'>MYCARE ASSISTANT (MYQURA) - 2024</span>
+            <h1 className="mt-4 font-figtree text-2xl md:text-4xl">
               <strong className="block">Care Service App for</strong>
               <i> Care Professionals & Patients</i>
             </h1>
@@ -70,7 +70,7 @@ const MyQuraDesign = () => {
                 <ImageFrame imageSrc={frame1} />
             </div>
             <section className="text-center mx-auto mt-8">
-                <h1 className="font-bold mb-4">MYQURA CLIENT</h1>
+                <h1 className="font-bold mb-4 md:text-3xl font-figtree">MYQURA CLIENT</h1>
 
                 <div className="flex flex-col gap-6 items-center">
                   <ImageFrame imageSrc={frame2} />
@@ -78,7 +78,7 @@ const MyQuraDesign = () => {
                 </div>
             </section>
 
-            <section className="text-center mx-auto mt-8">
+            <section className="text-center mx-auto mt-8 md:text-3xl font-figtree">
                 <h1 className="font-bold mb-4">MYQURA CARE <span className="block">PROFESSIONAL</span></h1>
 
                 <div className="flex flex-col gap-6 items-center">
@@ -91,7 +91,7 @@ const MyQuraDesign = () => {
             <ImageSlider />
 
             <section className="mt-8 mb-6 text-center">
-                <h1 className="font-bold text-3xl">ADMIN PORTAL</h1>
+                <h1 className="font-bold text-3xl md:text-5xl font-figtree">ADMIN PORTAL</h1>
 
                 <div className="flex justify-center items-center">
                   <Image src={adminPortal} alt="picture"/>

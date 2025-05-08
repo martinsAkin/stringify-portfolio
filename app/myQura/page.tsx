@@ -9,7 +9,7 @@ const MyQuraHomepage = () => {
 
   return (
     <div className='bg-black'>
-      <NavBArEntities currentSection={currentSection} setCurrentSection={setCurrentSection}/>
+      <NavBArEntities currentSection={currentSection} setCurrentSection={setCurrentSection} url='/rock-realty'/>
 
        {/* <MyQuraDesign />
        <MyQuraCaseStudy /> */}

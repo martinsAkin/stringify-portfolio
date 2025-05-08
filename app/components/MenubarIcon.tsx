@@ -7,7 +7,11 @@ import nextIcon from "../images/arrow-right.png"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import ToggleMode from "./ToggleButton"
+import Link from "next/link"
 
+interface NextProjectBtnProps{
+  url: string
+}
 
 const MenubarIcon = () => {
  const [menuToggle, setMenuToggle] = useState(false)
@@ -36,7 +40,7 @@ const MenubarIcon = () => {
  )
 }
 
-const NextProjectBtn = () => {
+const NextProjectBtn = ({url}:NextProjectBtnProps) => {
   const [screenSize, setScreenSize] = useState(null)
 
   useEffect(() => {
@@ -54,12 +58,14 @@ const NextProjectBtn = () => {
     <div>
         {screenSize? (
             <button className="bg-black border border-amber-300 pt-4 pr-6 pb-4 pl-6 rounded-2xl">
-              Next Project
+              <Link href={url}>Next Project</Link>
               <Image className="inline ml-[0.5rem]" src={nextIcon} height={30} width={30} alt="forward icon"/>
             </button>
           ) : ( 
           <button className="bg-black border border-amber-300 p-4 rounded-2xl">
-            <Image src={nextIcon} height={30} width={30} alt="forward icon"/>
+            <Link href={url}>
+              <Image src={nextIcon} height={30} width={30} alt="forward icon"/>
+            </Link>
           </button>
         )}        
     </div>
@@ -69,14 +75,15 @@ const NextProjectBtn = () => {
 type NavBArEntitiesProps = {
   currentSection: 'caseStudy' | 'design';
  setCurrentSection: (section: 'caseStudy' | 'design') => void;
+ url: string
 }
 
-const NavBArEntities = ({currentSection, setCurrentSection}: NavBArEntitiesProps) => {
+const NavBArEntities = ({currentSection, setCurrentSection, url}: NavBArEntitiesProps) => {
  return(
   <div className="flex justify-between p-[2rem] items-center md:justify-between">
           <MenubarIcon />
           <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
-          <NextProjectBtn />
+          <NextProjectBtn url={url} />
     </div>
  )
 }
