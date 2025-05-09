@@ -12,7 +12,7 @@ const NavBtn = ({location}: NavBtnProps) => {
 }
 export default function Home() {
   return (
-    <div className="h-[100dvh] flex gap-[2rem] flex-col">
+    <div className="h-[100dvh] pt-[10rem] pl-[5rem] flex gap-[2.5rem] flex-col">
 
         <Link href="/tantalizer">
           <NavBtn location='Visit Tantalizer Page'/>
@@ -22,6 +22,9 @@ export default function Home() {
         </Link>
         <Link href="/rock-realty">
         <NavBtn location="Visit Rock Realty Page" />
+        </Link>
+        <Link href="/kwats">
+        <NavBtn location="Visit Kwats delivery Page" />
         </Link>
 
         

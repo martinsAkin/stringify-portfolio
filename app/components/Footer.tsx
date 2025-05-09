@@ -15,10 +15,10 @@ const Button = () => {
 
 const Footer = ({projectName, projectImage}:FooterProps) => {
   return (
-   <section className="text-center flex flex-col items-center justify-center md:text-4xl lg:flex lg:flex-row lg:ml-[5rem] lg:mr-[5rem] lg:gap-[2rem]">
+   <section className="flex flex-col items-center justify-center md:text-4xl lg:flex lg:flex-row lg:ml-[5rem] lg:mr-[5rem] lg:gap-[2rem]">
    <div className="flex flex-col items-center lg:items-start">
      <h2 className="font-brunoAce">NEXT PROJECT</h2>
-     <h2 className="font-figtree">{projectName}</h2>
+     <h2 className="font-figtree pl-[5rem] pr-[2rem] md:pl-0">{projectName}</h2>
      <Button />
    </div>
    <div className="p-8">

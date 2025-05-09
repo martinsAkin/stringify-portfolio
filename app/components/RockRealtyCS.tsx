@@ -17,7 +17,7 @@ const RockRealtyCS = () => {
     <div className="p-8 bg-black text-white text-[20px] overflow-hidden font-poppins">
 
         <Image src={logo} className="mx-auto md:w-36 lg:w-[10rem]" width={120} height={120} alt="tantalizerLogo"/>
-        <span className={`text-amber-100 flex justify-center pt-4 text-[1rem] md:text-2xl font-brunoAce`}>ROCK REALTY LIMITED - 2024</span>
+        <span className={`text-amber-100 flex justify-center pt-4 text-[1rem] md:text-2xl font-brunoAce text-center`}>ROCK REALTY LIMITED - 2024</span>
         <section className="pt-8 text-white flex flex-col justify-center text-center gap-6 items-center pb-4 lg:mb-8">
           <p className="font-poppins">
             <span className="font-bold text-3xl md:text-4xl lg:text-5xl">Real Estate Website</span> <br />
