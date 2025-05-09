@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Logo from "../images/rock-reality/kwatsLogo.png"
-import footerImage from "../images/rock-reality/kwatsFooter.png"
+import footerImage from "../images/MOCKUP_5.jpg"
+// import frame1 from "../images/mycareAssistant/myCare_(1).png"
 import mememoji from "../images/rock-reality/Memoji Component.png"
 import spiralDownVector from "../images/mycareAssistant/case_study/Vector 10.png"
 import Footer from "./Footer"
@@ -31,7 +32,7 @@ const KwatsPage = () => {
           </div>
         </div>
 
-        <Footer projectImage={footerImage} projectName="Care Service App for Professionals and Patients" />
+        <Footer projectName="Resturant Website Redesign" projectImage={footerImage} projectLink="/tantalizer"/>
    </div>
  )
 }

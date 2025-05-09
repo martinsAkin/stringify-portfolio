@@ -28,6 +28,7 @@ import client4 from "../images/mycareAssistant/case_study/onboardingProfessional
 import adminPortal from "../images/mycareAssistant/iMac 24 inch (1).png"
 import { RetrospectBoxes } from "./TantalizerCaseStudy"
 import Footer from "./Footer"
+import footerImageTantalizer from "../images/footerImage.png"
 
 interface StoryBoardProps{
    storyImageUrl: string | StaticImageData;
@@ -300,7 +301,8 @@ const MyQuraCaseStudy = () => {
                </RetrospectBoxes>
           </section>
 
-          <Footer projectName={"Healthcare App"} projectImage={frame1} />
+          <Footer projectName="Real Estate Website Redesign" projectImage={footerImageTantalizer} projectLink="/rock-realty"/>
+          
     </div>
   )
 }

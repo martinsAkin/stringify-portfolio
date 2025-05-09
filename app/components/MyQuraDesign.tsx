@@ -13,6 +13,8 @@ import slider3 from "../images/mycareAssistant/sliderImage_(3).png"
 import adminPortal from "../images/mycareAssistant/iMac 24 inch (1).png"
 import LearnMore from "./LearnMore"
 import Footer from "./Footer"
+import footerImageTantalizer from "../images/footerImage.png"
+
 
 interface ImageFrameProps{
   imageSrc: string | StaticImageData
@@ -100,7 +102,7 @@ const MyQuraDesign = () => {
             </section>
 
             <LearnMore />
-            <Footer projectName="Resturant Website Redesign" projectImage={adminPortal} />
+            <Footer projectName="Real Estate Website Redesign" projectImage={footerImageTantalizer} projectLink="/rock-realty"/>
 
         </div>
     </div>

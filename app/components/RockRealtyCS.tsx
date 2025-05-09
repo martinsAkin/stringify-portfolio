@@ -207,9 +207,9 @@ const RockRealtyCS = () => {
                                 Designing for a multi-generational audience required a nuanced approach to accessibility and usability. I gained valuable experience in creating inclusive interfaces.
                             </RetrospectBoxes>
                           </div>
-                      </section>
+              </section>
 
-              <Footer projectName="Courier Servivce App for Delievry" projectImage={imageFooter}/>
+                <Footer projectName="Courier Servivce App for Delievry" projectImage={imageFooter} projectLink="/kwats"/>
     </div>
   )
 }

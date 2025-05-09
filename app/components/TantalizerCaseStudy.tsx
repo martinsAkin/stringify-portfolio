@@ -9,8 +9,9 @@ import tantalizer3 from "../images/TantalizerHomePage3.png"
 import slantedLogo from "../images/slantedLogo.png"
 import breakfastImage from "../images/breakfast.png"
 import { ReactNode } from "react"
-import footerImageTantalizer from "../images/footerImage.png"
+// import frame1 from "../images/mycareAssistant/myCare_(1).png"
 import Footer from "./Footer"
+import footerImage from "../images/rock-reality/kwatsFooter.png"
 
 
 interface PainpointProps{
@@ -287,7 +288,7 @@ export default function Tantalizer(){
             </div>
         </section>
 
-       <Footer projectName="Real Estate Website Redesign" projectImage={footerImageTantalizer}/>
+       <Footer projectImage={footerImage} projectName="Care Service App for Professionals and Patients" projectLink="/myQura"/>
         
       </div>
 

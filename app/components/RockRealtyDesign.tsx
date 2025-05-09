@@ -48,7 +48,7 @@ const RockRealtyDesign = () => {
 
                    <LearnMore />
 
-                   <Footer projectName="Courier Servivce App for Delievry" projectImage={imageFooter}/>
+                   <Footer projectName="Courier Servivce App for Delievry" projectImage={imageFooter} projectLink="/kwats"/>
 
 
     </div>

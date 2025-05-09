@@ -8,7 +8,7 @@ import tantalizer3 from "../images/TantalizerHomePage3.png"
 import slantedLogo from "../images/slantedLogo.png"
 import breakfastImage from "../images/breakfast.png"
 import LearnMore from './LearnMore'
-import footerImageTantalizer from "../images/footerImage.png"
+import footerImage from "../images/rock-reality/kwatsFooter.png"
 import Footer from './Footer'
 
 interface ThumbnailBgProps{
@@ -94,7 +94,7 @@ const TantalizerDesign = () => {
          <LearnMore />
         </div>
 
-        <Footer projectName='Real Estate Website Redesign' projectImage={footerImageTantalizer}/>
+        <Footer projectImage={footerImage} projectName="Care Service App for Professionals and Patients" projectLink="/myQura"/>
 
 
     </div>

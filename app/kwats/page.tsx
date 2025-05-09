@@ -9,7 +9,7 @@ const KwatsHomePage = () => {
 
   return (
     <div className='bg-black'>
-      <NavBArEntities currentSection={currentSection} setCurrentSection={setCurrentSection} url='/rock-realty'/>
+      <NavBArEntities currentSection={currentSection} setCurrentSection={setCurrentSection} url='/tantalizer'/>
 
       {currentSection === 'caseStudy' && <KwatsPage/> }
       {currentSection === 'design' && <KwatsPage /> }
