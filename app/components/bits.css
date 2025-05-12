@@ -1,0 +1,227 @@
+*{
+ padding: 0;
+ margin: 0;
+ font-family: "Poppins", sans-serif;
+}
+.remote{
+ border: 1px solid transparent;
+ background-color: #6e6b6b;
+ border-radius: 20px;
+ padding: 0 5px;
+ font-size: xx-small;
+ margin-left: 5px;
+ color: #d3cdcd;
+}
+.logo{
+ height: 1.5rem;
+ width: 4rem;
+}
+.recentProjectHeading, .proficientHeader{
+ font-family: "Figtree", sans-serif;
+ color: black;
+ text-align: center;
+}
+.aboutMe{
+ color: white;
+}
+.subheader, .specifications{
+ font-family: "Bruno Ace", sans-serif;
+}
+.companyDiv{
+ text-align: center;
+ padding-top: 0.3rem;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+ .recentProjectHeading{
+  font-size: 3rem;
+  margin-top: 2rem;
+ }
+ .stroke{
+  margin-top: 0.7rem;
+  background-color: black;
+ }
+ .subheader{
+  padding: 0.6rem;
+ }
+ .recentProjects{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  margin-top: 1.5rem;
+ }
+
+ 
+ .proficientHeader{
+  font-size: 3rem;
+  margin-top: 2rem;
+ }
+ .specifications{
+  font-size: 13px;
+  padding: 0 0.7rem;
+ }
+ .areaContainer{
+  width: 19rem;
+  padding: 0.7rem;
+ }
+ .proficientAreaGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-items: center;
+ }
+ .aboutMe{
+  margin-top: 3.5rem;
+ }
+ .imageSlider{
+  height: 55%;
+  width: 75%;
+ }
+ .experienceSection{
+  padding: 0.5rem;
+  width: 18rem;
+
+  .divider{
+   margin-top: 1rem;
+  }
+ }
+ .remotebtnflex{
+  display: flex;
+  gap: 0.2rem;
+ }
+ .remote{
+  display: none;
+ }
+ .companylogos{
+  display: flex;
+  gap: 1rem;
+ }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+ .recentProjectHeading{
+  font-size: 5rem;
+  margin-top: 2rem;
+ }
+ .stroke{
+  margin-top: 0.7rem;
+  background-color: black;
+ }
+ .subheader{
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+ }
+ .recentProjects{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+ }
+
+ 
+ .proficientHeader{
+  font-size: 4rem;
+  margin-top: 2rem;
+ }
+ .specifications{
+  font-size: 20px;
+  padding: 0 0.7rem;
+ }
+ .areaContainer{
+  width: 22rem;
+  padding: 1.5rem;
+ }
+ .proficientAreaGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-items: center;
+ }
+
+ 
+ .aboutMe{
+  margin-top: 3.5rem;
+ }
+ .imageSlider{
+  height: 30%;
+  width: 55%;
+ }
+ .experienceSection{
+  padding: 1.5rem;
+  width: 30rem;
+
+  .divider{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+  }
+ }
+ .experience, .education{
+  margin-bottom: 1rem;
+ }
+ .companylogos{
+  display: flex;
+  gap: 3rem;
+ }
+}
+
+@media (min-width: 1024px) {
+ .recentProjectHeading{
+  font-size: 7rem;
+  font-weight: bold;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+ }
+ .stroke{
+  margin-top: 0.7rem;
+ }
+ .recentProjects{
+  display: flex;
+  gap: 3rem;
+  padding: 2.5rem;
+ }
+ .proficientHeader{
+  margin-top: 3rem;
+  font-size: 4rem;
+ }
+ .specifications{
+  font-size: 20px;
+ }
+ .areaContainer{
+  padding: 0.7rem;
+ }
+ .proficientAreaGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-top: 1.5rem;
+ }
+ .aboutMe{
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+ }
+ .imageSlider{
+  height: 30%;
+  width: 35%;
+ }
+ .experienceSection{
+  padding: 1.5rem;
+  width: 30rem;
+
+  .divider{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+  }
+ }
+ .experience, .education{
+  margin-bottom: 1rem;
+ }
+ .companylogos{
+  display: flex;
+  gap: 3rem;
+ }
+}

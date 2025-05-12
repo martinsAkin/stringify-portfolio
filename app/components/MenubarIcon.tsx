@@ -13,7 +13,7 @@ interface NextProjectBtnProps{
   url: string
 }
 
-const MenubarIcon = () => {
+export const MenubarIcon = () => {
  const [menuToggle, setMenuToggle] = useState(false)
 
  const toggleMenu = () => {
@@ -26,9 +26,15 @@ const MenubarIcon = () => {
        
        <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pt-[1rem] md:pt-[1rem] md:p-[2rem] justify-around flex-col items-center absolute top-[10rem] left-[-0.5rem] h-dvh bg-black`}>
            <div className="flex flex-col gap-[1rem] md:gap-[2rem] items-center">
-             <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />
-             <Image src={userIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
-             <Image src={monitorIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
+             <Link href="/homepage">
+               <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />
+             </Link>
+             <Link href="/about-me">
+               <Image src={userIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
+             </Link>
+             <Link href="/projects">
+               <Image src={monitorIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
+             </Link>
            </div>
 
            <div>
