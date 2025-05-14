@@ -46,11 +46,11 @@ export const Slider = () => {
 export const Experience = () =>{
  return(
   <>
-    <div className="p-3.5 w-[21.5rem] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
-      <h2 className='text-left'>Experience</h2>
+    <div className="p-3.5 w-[105%] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+      <h2 className='text-left font-brunoAce'>Experience</h2>
 
       <section className='pt-5'>
-        <div className="flex gap-10 pb-3 experience">
+        <div className="flex gap-4 md:gap-10 pb-3 experience">
           <div className="text-white">2024 - Now</div>
           <div className="text-left">
             <h2>Product Designer</h2>
@@ -60,7 +60,7 @@ export const Experience = () =>{
           </div>
         </div>
         
-        <div className="flex gap-10 pb-3 experience">
+        <div className="flex gap-4 md:gap-10 pb-3 experience">
           <div className="text-white">2023 - 2024</div>
           <div className="text-left">
             <h2>Intern Product Designer</h2>
@@ -70,7 +70,7 @@ export const Experience = () =>{
           </div>
         </div>
 
-        <div className="flex gap-10 pb-3">
+        <div className="flex gap-4 md:gap-10 pb-3">
           <div className="text-white">2022 - 2023</div>
           <div className="text-left">
             <h2>Intern Product Designer</h2>
@@ -86,8 +86,8 @@ export const Experience = () =>{
 
       <section className="companyDiv">
          <span className="text-white">Companies I&apos;ve collaborated with</span>
-       <div className="flex gap-9 mt-3.5 items-center">
-         <Image src={Lty} alt="logo" height={50} width={50} className="logo"/>
+       <div className="flex gap-6 md:gap-9 mt-3.5 items-center">
+         <Image src={Lty} alt="logo" height={25} width={25} className="logo"/>
          <Image src={kawts} height={50} width={50} alt="logo" className="logo"/>
          <Image src={thenod} height={50} width={50} alt="logo" className="logo"/>
          <Image src={tantalizer} height={50} width={50} alt="logo" className="logo"/>
@@ -102,8 +102,8 @@ export const Experience = () =>{
 export const Education = () => {
  return(
   <>
-    <div className="p-5 w-[21.5rem] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
-     <h2 className="text-left pt-2.5">EDUCATION/CERTIFICATION</h2>
+    <div className="p-5 w-[105%] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+     <h2 className="text-left pt-2.5 font-brunoAce text-[13px] md:text-2xl">EDUCATION/CERTIFICATION</h2>
 
     <section className='pt-5'>
         <div className="flex gap-5 pb-3 education">

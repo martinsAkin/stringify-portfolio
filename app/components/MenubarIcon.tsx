@@ -21,10 +21,10 @@ export const MenubarIcon = () => {
  }
 
  return(
-   <div>
+   <div className="absolute top-[1rem] left-[0.5rem] bg-black">
        <Image src={menuIcon} width={50} height={50} onClick={toggleMenu} alt="menuIcon"/>
        
-       <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pt-[1rem] md:pt-[1rem] md:p-[2rem] justify-around flex-col items-center absolute top-[10rem] left-[-0.5rem] h-dvh bg-black`}>
+       <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pl-0 pt-[1rem] md:pt-[1rem] md:p-[2rem] md:pl-4 justify-around flex-col items-center h-dvh`}>
            <div className="flex flex-col gap-[1rem] md:gap-[2rem] items-center">
              <Link href="/homepage">
                <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />

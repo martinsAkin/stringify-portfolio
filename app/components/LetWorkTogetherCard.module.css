@@ -67,10 +67,10 @@
   /* ✅ Mobile Responsive */
   @media (max-width: 1023px) {
     .container {
-      width: 90%;
+      width: 98%;
       height: auto;
       flex-direction: column;
-      padding: 15px;
+      padding: 13px;
     }
   
     .imageSection {

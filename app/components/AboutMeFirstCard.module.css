@@ -69,9 +69,9 @@
   /* ✅ Mobile Responsive */
   @media (max-width: 1023px) {
     .container {
-      width: 21.5rem;
+      width: 105%;
       height: auto;
-      padding: 20px;
+      padding: 15px;
       margin-left: 0;
     }
 
@@ -80,7 +80,7 @@
       }
   
     .description {
-      font-size: 24px;
+      font-size: 20px;
       height: auto;
       line-height: 120%;
     }

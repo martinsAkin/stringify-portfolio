@@ -53,7 +53,7 @@
   /* ✅ Responsive Mobile View */
   @media (max-width: 1023px) {
     .container {
-      width: 21.5rem;
+      width: 105%;
       height: auto;
       padding: 1rem;
       margin-top: 1.5rem;
