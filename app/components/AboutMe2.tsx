@@ -34,7 +34,7 @@ export const Slider = () => {
   <>
    <div className="imageSlider">
        <Image src={images[index]} 
-          className="image"  
+          className="w-[30rem]"  
          alt="image"
         />
       
@@ -46,7 +46,7 @@ export const Slider = () => {
 export const Experience = () =>{
  return(
   <>
-    <div className="p-3.5 w-90 border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+    <div className="p-3.5 w-[21.5rem] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
       <h2 className='text-left'>Experience</h2>
 
       <section className='pt-5'>
@@ -102,7 +102,7 @@ export const Experience = () =>{
 export const Education = () => {
  return(
   <>
-    <div className="p-5 w-90 border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+    <div className="p-5 w-[21.5rem] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
      <h2 className="text-left pt-2.5">EDUCATION/CERTIFICATION</h2>
 
     <section className='pt-5'>

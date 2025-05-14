@@ -26,7 +26,7 @@ const ToolStack = ({ tools }: { tools: ToolProps[] }) => {
   const bottomRowTools = tools.slice(6);
 
   return (
-    <div className="toolstack-container w-[22rem]">
+    <div className="toolstack-container w-[20rem]">
       <div className="top-row flex gap-4 mb-2">
         {topRowTools.map((tool, index) => (
           <div
@@ -76,7 +76,7 @@ const ToolStackPage = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center bg-[#0D0D0D] w-[23rem] rounded-[1.5rem] p-4">
+    <div className="flex items-center justify-center bg-[#0D0D0D] w-[21rem] rounded-[1.5rem] p-4">
       <ToolStack tools={tools} />
     </div>
   );

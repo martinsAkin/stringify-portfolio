@@ -27,9 +27,9 @@ const About = () => {
                   </section>
 
 
-                  <section className="mt-8 justify-center grid grid-cols-1 pr-8 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <section className="mt-[5rem] justify-center grid grid-cols-1 pr-8 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <AboutMeFirstCard />
-                    <Image src={Lawal} alt="Lawal" className="w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem]"/>
+                    <Image src={Lawal} alt="Lawal" className="w-[22.5rem] h-[22rem] md:w-[30rem] md:h-[30rem]"/>
                     <Experience />
                     <AboutMe />
                     <Slider />
