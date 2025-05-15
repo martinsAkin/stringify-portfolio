@@ -24,16 +24,18 @@ export const MenubarIcon = () => {
    <div className="absolute top-[1rem] left-[0.5rem] bg-black">
        <Image src={menuIcon} width={50} height={50} onClick={toggleMenu} alt="menuIcon"/>
        
-       <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pl-0 pt-[1rem] md:pt-[1rem] md:p-[2rem] md:pl-4 justify-around flex-col items-center h-dvh`}>
+       <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pl-0 pt-[1rem] md:pt-[1rem] md:p-[2rem] md:pl-0 justify-around flex-col  h-dvh`}>
            <div className="flex flex-col gap-[1rem] md:gap-[2rem] items-center">
-             <Link href="/homepage">
-               <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />
-             </Link>
+               <Link href="/homepage">
+                   <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />
+               </Link>
              <Link href="/about-me">
                <Image src={userIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
              </Link>
              <Link href="/projects">
-               <Image src={monitorIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
+               <div>
+                 <Image src={monitorIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
+               </div>
              </Link>
            </div>
 
@@ -63,10 +65,13 @@ const NextProjectBtn = ({url}:NextProjectBtnProps) => {
   return(
     <div>
         {screenSize? (
-            <button className="bg-black border border-amber-300 pt-4 pr-6 pb-4 pl-6 rounded-2xl">
-              <Link href={url}>Next Project</Link>
-              <Image className="inline ml-[0.5rem]" src={nextIcon} height={30} width={30} alt="forward icon"/>
-            </button>
+            <Link href={url}>
+              <button className="bg-black border border-amber-300 pt-4 pr-6 pb-4 pl-6 rounded-2xl cursor-pointer">
+                Next Project
+                <Image className="inline ml-[0.5rem]" src={nextIcon} height={30} width={30} alt="forward icon"/>
+                
+              </button>
+            </Link>
           ) : ( 
           <button className="bg-black border border-amber-300 p-4 rounded-2xl">
             <Link href={url}>
@@ -86,11 +91,13 @@ type NavBArEntitiesProps = {
 
 const NavBArEntities = ({currentSection, setCurrentSection, url}: NavBArEntitiesProps) => {
  return(
-  <div className="flex justify-between p-[2rem] items-center md:justify-between">
-          <MenubarIcon />
-          <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
-          <NextProjectBtn url={url} />
-    </div>
+  <div>
+    <MenubarIcon />
+    <div className="flex gap-[3.5rem] ml-[5rem] p-[2rem] md:ml-[30rem] md:justify-between">
+            <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
+            <NextProjectBtn url={url} />
+      </div>
+  </div>
  )
 }
 

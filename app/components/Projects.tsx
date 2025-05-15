@@ -22,7 +22,7 @@ const ProjectPage = () => {
                 <MenubarIcon />
                 </div>
       
-            <div className="pl-[3.5rem] pr-[0.5rem] font-poppins">
+            <div className="pl-[1rem] md:pl-[2rem] pr-[0.5rem] font-poppins">
                     <section className="relative">
                         <Image src={maskedImage} alt="Hero section" />
                         <div className="w-[18rem] absolute top-[10rem] left-[10%] right-[35%] font-figtree md:left-[20%] md:top-[25rem] lg:left-[25%] lg:top-[30rem] lg:w-[30rem]">
