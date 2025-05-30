@@ -107,7 +107,7 @@ const MobileScreens = ({ imageSrc }:MobileScreensProps) => {
 const Points = ({number, point}:PointsProps) => {
    return(
       <div className="flex flex-col items-center">
-         <div className="rounded-[50%] font-bold text-red-600 bg-amber-400 w-6 text-center mb-[1rem]">{number}</div>
+         <div className="rounded-[50%] pt-2 pb-2 pl-4 pr-4 text-center font-bold text-red-600 bg-amber-400 mb-[1rem]">{number}</div>
          <section className="text-[13px] md:text-2xl">
             {point}
          </section>
@@ -118,8 +118,8 @@ const Points = ({number, point}:PointsProps) => {
 const Points2 = ({number, point}:PointsProps) => {
    return(
       <div className="flex gap-[0.5rem] items-center">
-         <div className="rounded-[50%] font-bold text-red-600 bg-amber-400 w-8 h-10 p-[0.5rem] text-center">{number}</div>
-         <section className="text-[13px] md:text-2xl">
+         <div className="rounded-[50%] pt-2 pb-2 pl-4 pr-4 text-center font-bold text-red-600 bg-amber-400 mb-[1rem]">{number}</div>
+         <section className="text-[13px] mt-[-0.5rem] md:text-2xl">
             {point}
          </section>
       </div>
@@ -128,10 +128,10 @@ const Points2 = ({number, point}:PointsProps) => {
 
 const MyQuraCaseStudy = () => {
   return (
-    <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem] font-poppins">
+    <div className="pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem] font-poppins" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
         <section className="text-center pr-8 pl-8">
             <Image src={mqLogo} className="w-[5rem] h-[5rem] mx-auto md:w-[15rem] md:h-[15rem]" alt="pageLogo"/>
-            <span className='text-gray-400 text-[15px] font-brunoAce md:text-3xl'>MYCARE ASSISTANT (MYQURA) - 2024</span>
+            <span className='text-gray-200 text-[15px] font-brunoAce md:text-2xl lg:text-3xl'>MYCARE ASSISTANT (MYQURA) - 2024</span>
             <h1 className="mt-4 font-figtree md:text-4xl">
               <strong className="block">Care Service App for</strong>
               <i> Care Professionals & Patients</i>
@@ -141,8 +141,8 @@ const MyQuraCaseStudy = () => {
                <ImageFrame imageSrc={frame1}/>
             </div>
 
-         <section className="m-[3rem] flex flex-col gap-[3rem] pb-[3rem] md:flex md:flex-row md:ml-[10rem] md:mr-[5rem]">
-            <div className="flex md:flex gap-8 md:flex-col text-[15px] text-gray-400 md:text-[18px]">
+         <section className="m-[3rem] flex flex-col gap-[3rem] pb-[3rem] md:flex-row md:ml-[5rem] lg:flex-row lg:ml-[10rem] lg:mr-[5rem]">
+            <div className="flex md:flex gap-8 md:flex-col text-[15px] text-white md:text-[18px]">
                 <section className="flex flex-col gap-6 list-none">
                  <div>
                    <li className="font-bold text-white">Client:</li>
@@ -178,7 +178,7 @@ const MyQuraCaseStudy = () => {
                </span>
             </div>
          </section>
-         <section className="p-[2rem] bg-gray-900 text-[16px] md:pl-[5rem] md:text-2xl">
+         <section className="p-[2rem] bg-slate-800 text-[16px] md:pl-[5rem] md:text-2xl">
                   <h1 className="mt-[2rem] mb-[1.5rem] text-3xl font-bold font-figtree">THE PROBLEM</h1>
                   <span>
                      The relative of the founder of MyCare Assistant suffered a major health challenge, and the inadequate and costly support services led to her death. This led to the birth of MyCare Assistant, the company grew and handled all their operations manually. However, as the business grew and the volume of Clients and Care Professionals increased, this manual approach became unsustainable. To address the challenges with the manual approach, MyCare Assistant recognised the necessity of transitioning from manual operations to a digital platform.
@@ -195,7 +195,7 @@ const MyQuraCaseStudy = () => {
             <span className="text-[15px] md:text-2xl">In order to seamlessly achieve the business and design goals, the illustration below represents the process I went through:</span>
          </div>
 
-         <section className="p-[2rem] bg-gray-800 grid grid-cols-1 gap-[1.5rem] md:grid md:grid-cols-3">
+         <section className="p-[2rem] bg-slate-800 grid grid-cols-1 gap-[1.5rem] md:grid md:grid-cols-2 lg:grid-cols-3">
                <StoryBoard storyImageUrl={storyboard1} storyDescription="Oluwatobi is living in Canada with her family" />
                <StoryBoard storyImageUrl={storyboard2} storyDescription="Oluwatobi&#39;s Dad has been sick with an ailment, and he has been rushed to the hospital" />
                <StoryBoard storyImageUrl={storyboard3} storyDescription="Oluwatobi&#39;s Dad condition has gotten better and has been discharged from the hospital" />
@@ -233,7 +233,7 @@ const MyQuraCaseStudy = () => {
             <Image src={spiralDownVector} height={70} alt="vector-image"/>
          </div>
 
-         <section className="grid grid-cols-2 m-[2rem] gap-[1rem]">
+         <section className="grid grid-cols-1 m-[2rem] items-center gap-[1rem] md:grid-cols-2">
             <Points number={1} point="I ensured that from the flash screen, there is a feel of human connection and care."/>
             <Points number={2} point="I ensured that from the flash screen, there is a feel of human connection and care."/>
             <Points number={3} point="I ensured that from the flash screen, there is a feel of human connection and care."/>
@@ -269,7 +269,7 @@ const MyQuraCaseStudy = () => {
             <div className="flex justify-center">
                <Image src={spiralDownVector} height={75} alt=""/>
             </div>
-            <section className="grid grid-cols-2 md:gap-[2rem]">
+            <section className="mt-8 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[2rem]">
                <Points number={1} point="I endured that from the onboarding screens, there is a feel of human connection and care."/>
                <Points number={2} point="It&#39;s compulsory for every care professional to be verified so the company is confident of their care professionals."/>
                <Points number={3} point="The cards makes the most important information available to the care professionals."/>
@@ -284,9 +284,9 @@ const MyQuraCaseStudy = () => {
             <h1 className="font-bold text-3xl mb-4 md:text-4xl font-figtree">ADMIN PORTAL</h1>
             <span className="text-[15px] inline-block mb-[2rem] md:text-2xl">The admin portal was designed to manage requests from the clients as well as the care professionals. To ensure proficient services are been delivered appropriately</span>
 
-              <Image src={adminPortal} height={200} className="mx-auto md:w-[40rem] h-[25rem]" alt="image" /> 
+              <Image src={adminPortal} className="mx-auto md:w-[40rem] h-[15rem] md:h-[20rem] lg:h-[20rem]" alt="image" /> 
           </section>
-          <section className="bg-gray-700 p-6 grid grid-col-1 gap-8 mb-[5rem] md:grid md:grid-cols-2">
+          <section className="bg-slate-800 p-6 md:ml-8 grid grid-col-1 gap-8 mb-[5rem] md:grid md:grid-cols-2">
                <RetrospectBoxes number="01" heading="Designing for Social Impact">
                   A deep dive into the healthcare sector revealed the urgent need for user-centered solutions in Nigeria and surrounding regions. This project channeled my passion for designing for social impact.
                </RetrospectBoxes>

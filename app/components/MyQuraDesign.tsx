@@ -40,7 +40,7 @@ const ImageSlider = () => {
     return () => clearInterval(intervalTiming)
   }, [sliderArray])
   return(
-    <div className="overflow-hidden w-[20rem] md:w-dvw flex items-center m-[4rem] relative mr-[2.5rem] ml-[2.5rem] md:mr-[5rem] md:ml-[5rem]">
+    <div className="overflow-hidden w-[20rem] md:w-[35rem] lg:w-dvw flex items-center m-[4rem] relative mr-[2.5rem] ml-[2.5rem] md:mr-[5rem] md:ml-[5rem]">
       
         <div className="flex items-center transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
 
@@ -56,7 +56,7 @@ const ImageSlider = () => {
 
 const MyQuraDesign = () => {
   return (
-    <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem]">
+    <div className="pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem]" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
         <div>
 
           <section className="text-center">

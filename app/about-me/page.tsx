@@ -1,11 +1,9 @@
 "use client"
-import { MenubarIcon } from "../components/MenubarIcon"
 import AboutMe from "../components/AboutMe"
 
 const page = () => {
   return (
-    <div className="bg-black">
-       {/* <MenubarIcon  /> */}
+    <div style={{backgroundImage: "url('/background/shiny-background.png')"}}>
         <AboutMe />
 
     </div>

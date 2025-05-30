@@ -9,7 +9,7 @@ const MyQuraHomepage = () => {
  const [currentSection, setCurrentSection] = useState <'caseStudy' | 'design'>('caseStudy')
 
   return (
-    <div className='bg-black'>
+    <div style={{backgroundImage: "url('/background/shiny-background.png')"}}>
       <NavBArEntities currentSection={currentSection} setCurrentSection={setCurrentSection} url='/rock-realty'/>
 
        {/* <MyQuraDesign />

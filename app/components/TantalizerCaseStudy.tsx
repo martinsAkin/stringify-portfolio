@@ -98,7 +98,7 @@ export const RetrospectBoxes = ({number, heading, children}: RetrospectProps) =>
 
 export default function Tantalizer(){
   return(
-   <div className="bg-black pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem] font-poppins">
+   <div className="pb-8 pt-12 text-white text-[20px] overflow-hidden lg:pr-[1rem] font-poppins" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
 
       <div className="md:pl-[2rem]">
         

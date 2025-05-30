@@ -3,7 +3,7 @@ import ProjectPage from "../components/Projects"
 
 const page = () => {
   return (
-    <div className="bg-black">
+    <div style={{backgroundImage: "url('/background/shiny-background.png')"}}>
      
       <ProjectPage />
 

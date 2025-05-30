@@ -14,7 +14,7 @@ import Footer from "./Footer"
 
 const RockRealtyDesign = () => {
   return (
-    <div className="p-8 bg-black text-white text-[20px] overflow-hidden">
+    <div className="p-8 text-white text-[20px] overflow-hidden" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
 
            <Image src={logo} className="mx-auto md:w-36 lg:w-[10rem]" width={120} height={120} alt="tantalizerLogo"/>
              <span className={`text-amber-100 flex justify-center pt-4 text-[1rem] md:text-2xl font-brunoAce text-center`}>ROCK REALTY LIMITED - 2024</span>

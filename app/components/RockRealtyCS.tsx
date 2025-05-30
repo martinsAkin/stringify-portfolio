@@ -14,7 +14,7 @@ import Footer from "./Footer"
 
 const RockRealtyCS = () => {
   return (
-    <div className="p-8 bg-black text-white text-[20px] overflow-hidden font-poppins">
+    <div className="p-8 text-white text-[20px] overflow-hidden font-poppins" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
 
         <Image src={logo} className="mx-auto md:w-36 lg:w-[10rem]" width={120} height={120} alt="tantalizerLogo"/>
         <span className={`text-amber-100 flex justify-center pt-4 text-[1rem] md:text-2xl font-brunoAce text-center`}>ROCK REALTY LIMITED - 2024</span>
@@ -65,19 +65,19 @@ const RockRealtyCS = () => {
           </div>
         </section>
 
-        <section className="mt-8 bg-[#1B1B1B] pl-10 pt-8 pr-10 pb-10 lg:pl-[8rem] lg:pr-[10rem]">
+        <section className="mt-8 bg-[#1B1B1B] pl-[1.5rem] pt-8 pr-10 pb-10 lg:pl-[8rem] lg:pr-[10rem]">
           <div> 
             <h2 className={`text-4xl pb-6 font-bold font-figtree`}>THE PROBLEM</h2>
               <ol className={`list-disc ml-5 lg:pl-[2rem]`}>
-              <li className="text-gray-400">
+              <li className="text-gray-200">
                 <span className="font-bold text-white">Lack of Clear Digital Presence :</span> Rock Realty faces the need for a &#34;strong digital presence&#34;, a &#34;user-friendly and informative online platform.&#34; Which the the current website doesn&#39;t meet these standards.
                 </li>
-              <li className="text-gray-400">
+              <li className="text-gray-200">
                 <span className="font-bold text-white">Need for Enhanced User Experience :</span> The current website wasn&#39;t well structured so the company experienced some usability issues that hinder user engagement.
                 </li>
-              <li className="text-gray-400">
+              <li className="text-gray-200">
                 <span className="font-bold text-white">Building Trust :</span> The current website has not been effectively establishing credibility and confidence among potential clients.</li>
-              <li className="text-gray-400">
+              <li className="text-gray-200">
                    Need to simplify the complex process of navigating the Nigerian real estate market.
 
               </li>
@@ -85,7 +85,7 @@ const RockRealtyCS = () => {
         
           </div>
           <div className="mt-14">
-            <h2 className={`text-4xl pb-6 font-bold font-figtree`}>THE SOLUTION</h2>
+            <h2 className="text-4xl pb-6 font-bold font-figtree">THE SOLUTION</h2>
               <p>To address these challenges, I redesigned Rock Realty&#39;s website. The goal was to create a seamless and informative platform that simplifies the real estate process. This redesign focused on enhancing user experience, building trust through clear communication, and reflecting Rock Realty&#39;s innovative approach in the digital space. Ultimately, I aimed to empower clients with easy access to information and a confident online journey.
               </p>
           </div>
@@ -99,7 +99,7 @@ const RockRealtyCS = () => {
               To kick off the Rock Realty redesign, I began with a crucial meeting with their team. We discussed their vision for the new site and the specific improvements they wanted to see. This ensured we were all on the same page regarding the project&#39;s goals.
         
               <span className="text-[20px] mt-5 inline-block">The process I took includes; </span>
-              <ol className="list-disc pl-8 leading-normal text-gray-400">
+              <ol className="list-disc pl-8 leading-normal text-gray-200">
                 <li><span className="font-bold text-white">A thorough review of the existing Rock Realty website:</span> This allowed me to pinpoint areas needing improvement and understand the current user experience.</li>
 
                 <li><span className="font-bold text-white">
@@ -188,7 +188,7 @@ const RockRealtyCS = () => {
 
               <section>
                 <h1 className="font-bold text-3xl mb-8 md:text-4xl font-figtree">SHOWCASING PRODUCTS AND SERVICES WITH RELEVANT DETAILS</h1>
-                    <span className="text-[15px] md:text-2xl text-gray-400">The Rock Realty products and services page was designed to deliver clear, concise information. We prioritized detailed property listings and service descriptions, ensuring users could easily understand offerings and make informed decisions. A user-friendly interface and intuitive navigation allowed for seamless exploration, enhancing accessibility and driving engagement.</span>
+                    <span className="text-[15px] md:text-2xl text-gray-200">The Rock Realty products and services page was designed to deliver clear, concise information. We prioritized detailed property listings and service descriptions, ensuring users could easily understand offerings and make informed decisions. A user-friendly interface and intuitive navigation allowed for seamless exploration, enhancing accessibility and driving engagement.</span>
               </section>
 
               <div className="flex gap-[2.5rem] mt-[2rem] justify-center">

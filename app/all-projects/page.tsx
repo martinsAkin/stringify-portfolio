@@ -12,7 +12,7 @@ const NavBtn = ({location}: NavBtnProps) => {
 }
 export default function Home() {
   return (
-    <div className="h-[100dvh] flex justify-center">
+    <div className="h-[100dvh] flex justify-center" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
 
         <div className="flex gap-[2.5rem] flex-col mt-[10rem]">
           <Link href="/tantalizer">

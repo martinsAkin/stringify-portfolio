@@ -63,8 +63,7 @@ const ThumbnailBg3 = ({imageUrl, logoUrl}: ThumbnailBg3Props) => {
 
 const TantalizerDesign = () => {
   return (
-    <div className="font-poppins">
-       {/* <NavBArEntities /> */}
+    <div className="font-poppins" style={{backgroundImage: "url('/background/shiny-background.png')"}}>
 
        <Image src={tantalizerLogo} className="mx-auto md:w-36 lg:w-[10rem] mt-[2.5rem]" width={120} height={120} alt="tantalizerLogo"/>
         <span className={`text-amber-100 flex justify-center pt-4 text-2xl md:text-2xl font-brunoAce`}>TANTALIZER - 2023</span>
