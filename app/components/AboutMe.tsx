@@ -16,11 +16,11 @@ const About = () => {
               <MenubarIcon />
               </div>
     
-          <div className="pl-[1rem] md:pl-[2rem] pr-[0.5rem] font-poppins">
+          <div className="pl-[1.35rem] md:pl-[2rem] pr-[0.5rem] font-poppins">
            
                   <section className="relative">
                       <Image src={maskedImage} alt="Hero section" />
-                      <div className="w-[18rem] absolute top-[10rem] left-[10%] right-[35%] font-figtree md:left-[20%] md:top-[25rem] lg:left-[25%] lg:top-[30rem] lg:w-[30rem]">
+                      <div className="w-[18rem] absolute top-[10rem] left-[7.5%] right-[35%] font-figtree md:left-[20%] md:top-[25rem] lg:left-[25%] lg:top-[30rem] lg:w-[30rem]">
                         <h1 className="text-5xl text-center md:text-[5rem] lg:text-[10rem]">ABOUT</h1>
                         <span className="lg:text-[1.5rem]">FROM HOPING ON DIFFERENT SKILLS SET TO LOVING</span>
                         <h1 className="text-3xl lg:text-5xl">PRODUCT DESIGN</h1>
@@ -28,7 +28,7 @@ const About = () => {
                   </section>
 
 
-                  <section className="mt-[5rem] justify-center grid grid-cols-1 pr-8 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <section className="mt-[5rem] justify-center grid grid-cols-1 pr-8 md:grid-cols-2 lg:grid-cols-3 lg:ml-0 gap-6">
                     <AboutMeFirstCard />
                     <Image src={Lawal} alt="Lawal" className="w-[22.5rem] h-[22rem] md:w-[30rem] md:h-[30rem]"/>
                     <Experience />

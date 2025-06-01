@@ -47,13 +47,13 @@ export function ProficientAreas() {
       <span className="italic font-bold text-white">PROFICIENT</span> <span className="font-bold text-white">AREAS</span>
     </div>
 
-    <div className="flex justify-between gap-2.5 mt-4 md:gap-0 items-center pr-[1rem] md:text-2xl lg:text-3xl">
+    <div className="flex justify-between gap-0 mt-4 md:gap-0 items-center pr-[1rem] md:text-2xl lg:text-3xl">
       <div className='text-white font-brunoAce'>SKILL NICHE</div>
-      <div className="w-[5rem] h-0.5 flex justify-center mt-2.5 bg-white md:w-[40rem]"></div>
+      <div className="w-[5rem] h-0.5 flex justify-center mt-0 bg-white md:w-[40rem]"></div>
       <div className='text-white font-brunoAce'>SPECIALTIES</div>
     </div>
  
-    <section className="grid grid-cols-1 md:grid-cols-2 md:gap-[3rem] lg:grid-cols-3 gap-x-3 gap-y-10 pt-10 p-9">
+    <section className="grid grid-cols-1 md:grid-cols-2 md:gap-[3rem] lg:grid-cols-3 gap-x-3 gap-y-10 pt-10 p-9 flex-wrap">
       <NitcheBox iconUrl={mobileLogo} heading={"Mobile App Design"}>Crafting mobile applications that are user-friendly, visually appealing, and optimized for performance</NitcheBox>
       <NitcheBox iconUrl={devicesLogo} heading={"Web App Design"}>Building web applications that seamlessly blend form and function for a superior online experience</NitcheBox>
       <NitcheBox iconUrl={layerLogo} heading={"Product Strategy"}>Charting the course for success with well-informed strategies that align product goals with market demands</NitcheBox>
@@ -73,7 +73,7 @@ const RecentProjectSection = () => {
         <span className="font-bold text-white">RECENT</span> <span   className="italic text-white">PROJECTS</span> 
       </div>
 
-    <section className="flex flex-row mb-8 justify-center gap-2.5 items-center md:flex-row md:text-2xl lg:text-4xl md:mb-8 md:ml-8">
+    <section className="flex flex-row mb-8 justify-center gap-2.5 ml-8 items-center md:flex-row md:text-2xl lg:text-3xl md:mb-8 md:ml-2">
        <div>CASE STUDIES</div>
        <div className="md:w-2xs md:h-0.5 md:flex md:justify-center md:mt-3 md:bg-white w-6"></div>
        <div>LIVE PROJECTS</div>
@@ -81,23 +81,23 @@ const RecentProjectSection = () => {
        <div>DESIGN PROCESS</div>
     </section>
 
-    <section className="flex flex-col gap-[8rem] md:gap-[5rem] justify-center items-center md:flex-row">
-      <div className="relative w-64 h-64">
+    <section className="flex flex-col gap-[8rem] md:gap-[3rem] justify-center items-center md:grid md:grid-cols-2 md:gap-y-[7rem] lg:grid lg:grid-cols-3 lg:gap-0 lg:ml-[5rem]">
+      <div className="relative w-[18rem] h-[18rem]">
         <Link href="/myQura">
           <Image src={greyImage1} className="lg:absolute lg:inset-0 lg:w-max lg:h-[20rem] lg:object-cover lg:transition-opacity lg:duration-300 lg:hover:opacity-0" alt="image"/>
-          <Image src={coloredImage1} className="sm:opacity-100 absolute inset-0 w-max h-[21.5rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
+          <Image src={coloredImage1} className="sm:opacity-100 absolute inset-0 w-max h-[24rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
         </Link>
       </div>
-      <div className="relative w-64 h-64">
+      <div className="relative w-[18rem] h-[18rem]">
         <Link href="/tantalizer">
           <Image src={greyImage2} className="lg:absolute lg:inset-0 lg:w-max lg:h-[20rem] lg:object-cover lg:transition-opacity lg:duration-300 lg:hover:opacity-0" alt="image"/>
-          <Image src={coloredImage2} className="sm:opacity-100  absolute inset-0 w-[30rem] h-[21.5rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
+          <Image src={coloredImage2} className="sm:opacity-100  absolute inset-0 w-max h-[24rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
         </Link>
       </div>
-      <div className="relative w-64 h-64">
+      <div className="relative w-[18rem] h-[18rem]">
         <Link href="/rock-realty">
           <Image src={greyImage3} className="lg:absolute lg:inset-0 lg:w-max lg:h-[20rem] lg:object-cover lg:transition-opacity lg:duration-300 lg:hover:opacity-0" alt="image"/>
-          <Image src={coloredImage3} className="sm:opacity-100 absolute inset-0 w-[25rem] h-[21.5rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
+          <Image src={coloredImage3} className="sm:opacity-100 absolute inset-0 w-max h-[24rem] object-cover lg:opacity-0 transition-opacity duration-300 hover:opacity-100" alt="image"/>
         </Link>
       </div>
 
@@ -109,15 +109,15 @@ const RecentProjectSection = () => {
 
 const Homepage = () => {
   return (
-    <div style={{backgroundImage: "url('/background/shiny-background.png')"}}>
+    <div style={{backgroundImage: "url('/background/shiny-background.png')", overflow: "hidden"}}>
           <div className="w-[15rem] pt-[2.5rem] pl-[0.5rem]">
           <MenubarIcon />
           </div>
 
-      <div className="pl-[2.5rem] pr-[0.5rem] font-poppins">
+      <div className="pl-[1rem] pr-[0.5rem] font-poppins text-white">
               <section className="relative">
                   <Image src={maskedImage} alt="Hero section" />
-                  <div className="w-[18rem] absolute top-[10rem] left-[7.5%] right-[35%] font-figtree md:w-[25rem] md:left-[20%] md:top-[20rem] lg:left-[25%] lg:top-[30rem] lg:w-[35rem]">
+                  <div className="w-[15rem] absolute top-[10rem] left-6 right-[35%] font-figtree md:w-[25rem] md:left-[20%] md:top-[20rem] lg:left-[25%] lg:top-[30rem] lg:w-[40rem]">
                     <h1 className="text-[3.5rem] md:text-[6rem] lg:text-[9rem]">H O L A</h1>
                     <div className="flex text-[9px] justify-between font-brunoAce md:text-[1rem] lg:text-2xl">
                       <div>PRODUCT DESIGNER</div>
@@ -128,11 +128,11 @@ const Homepage = () => {
                     </div>
                   </div>
               </section>
-                  <div className="flex justify-center mt-[2rem] md:mt-[1rem] lg:mt-[-6.5rem]">
+                  <div className="flex justify-center mt-[6rem] md:mt-[2.5rem] lg:mt-[-6.5rem]">
                     <AnimatedDivider />
                   </div>
 
-              <article className="mt-[2rem] md:mt-[4rem]">
+              <article className="mt-[2rem] md:mt-[4rem] text-white">
                   <span className="text-3xl inline-block w-[15rem] md:text-3xl lg:text-5xl md:w-[35rem]">
                     GREAT DESIGN IS HARD, I MAKE IT EASY
                   </span>
@@ -141,9 +141,9 @@ const Homepage = () => {
                   </span>
               </article>
           
-              <div className="flex flex-col gap-[6rem] md:gap-[8rem] md:mr-6">
+              <div className="flex flex-col gap-[6rem] md:ml-6">
                 <RecentProjectSection />
-                <section className="flex gap-[2.5rem] items-center justify-center">
+                <section className="flex gap-[2.5rem] items-center justify-center mt-8">
                   <div className="md:w-2xs md:h-0.5 md:flex md:justify-center md:mt-3 md:bg-gray-600"></div>
                   <Link href="/all-projects">
                     <button className="rounded-[1.5rem] p-4 border border-amber-500">All Projects</button>

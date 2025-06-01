@@ -5,7 +5,7 @@ import { FaLinkedin, FaDribbble, FaXTwitter} from 'react-icons/fa6';
 
 const ThankYou = () => {
   return (
-    <div className="p-[3.5rem] flex flex-col">
+    <div className="p-[3.5rem] flex flex-col text-white">
         <div className="flex flex-col gap-[1rem] md:gap-0 md:flex-row justify-between items-center">
            <div className="font-poppins ">
               C 2025. All rights reserved <br />

@@ -92,8 +92,8 @@ type NavBArEntitiesProps = {
 const NavBArEntities = ({currentSection, setCurrentSection, url}: NavBArEntitiesProps) => {
  return(
   <div>
-    <MenubarIcon />
-    <div className="flex gap-[3.5rem] mt-[-0.5rem] ml-[5rem] p-[2rem] md:ml-[7rem] md:gap-[5.7rem] lg:ml-[25rem] lg:justify-between">
+      <MenubarIcon />
+    <div className="flex gap-[2.5rem] mt-[-1rem] ml-[5rem] p-[2rem] md:ml-[7rem] md:gap-[5.5rem] lg:ml-[25rem] lg:justify-between">
             <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
             <NextProjectBtn url={url} />
       </div>
