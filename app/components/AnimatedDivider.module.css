@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 20px 0;
     position: relative;
+    margin-left: -1rem;
   }
   
   .line {
@@ -59,6 +60,14 @@
     }
 
   @media (min-width: 767px) and (max-width: 1023px) { 
+      .dividerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        position: relative;
+        margin-left: -5rem;
+      }
        .line {
         width: 250px; /* smaller line on mobile */
         margin-left: 20px;

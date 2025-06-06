@@ -1,8 +1,4 @@
 import menuIcon from "../images/LAJ_logo.png"
-import userIcon from "../images/user.png"
-import homeIcon from "../images/home.png"
-import monitorIcon from "../images/monitor.png"
-import copyIcon from "../images/copy.png"
 import nextIcon from "../images/arrow-right.png"
 import Image from "next/image"
 import { useState, useEffect } from "react"
@@ -14,36 +10,11 @@ interface NextProjectBtnProps{
 }
 
 export const MenubarIcon = () => {
- const [menuToggle, setMenuToggle] = useState(false)
-
- const toggleMenu = () => {
-   setMenuToggle(!menuToggle)
- }
 
  return(
-   <div className="absolute top-[1rem] left-[0.5rem] bg-black">
-       <Image src={menuIcon} width={50} height={50} onClick={toggleMenu} alt="menuIcon"/>
+   <div className="bg-transparent w-[4rem] mt-8">
+       <Image src={menuIcon} className="w-[35px] h-[35px] md:w-[50px] md:h-[50px]" alt="menuIcon"/>
        
-       <div className={`${menuToggle ? "block" : "hidden"} flex p-[1rem] pl-0 pt-[1rem] md:pt-[1rem] md:p-[2rem] md:pl-0 justify-around flex-col  h-dvh`}>
-           <div className="flex flex-col gap-[1rem] md:gap-[2rem] items-center">
-               <Link href="/homepage">
-                   <Image src={homeIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon"  />
-               </Link>
-             <Link href="/about-me">
-               <Image src={userIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
-             </Link>
-             <Link href="/projects">
-               <div>
-                 <Image src={monitorIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
-               </div>
-             </Link>
-           </div>
-
-           <div>
-             <Image src={copyIcon} className="w-[1.5rem] md:w-[3rem]" alt="home icon" />
-           </div>
-        </div>
-
    </div>
  )
 }
@@ -93,7 +64,7 @@ const NavBArEntities = ({currentSection, setCurrentSection, url}: NavBArEntities
  return(
   <div>
       <MenubarIcon />
-    <div className="flex gap-[2.5rem] mt-[-1rem] ml-[5rem] p-[2rem] md:ml-[7rem] md:gap-[5.5rem] lg:ml-[25rem] lg:justify-between">
+    <div className="flex gap-[2.5rem] mt-[-4rem] ml-[5rem] p-[2rem] md:ml-[7rem] md:gap-[5.5rem] lg:ml-[25rem] lg:justify-between lg:mt-[-5rem]">    
             <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
             <NextProjectBtn url={url} />
       </div>

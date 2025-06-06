@@ -76,7 +76,7 @@ const ToolStackPage = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center bg-[#0D0D0D] w-[102%] rounded-[1.5rem] p-4">
+    <div className="flex items-center justify-center bg-[#0D0D0D] w-[23rem] md:w-[90%] rounded-[1.5rem] p-4">
       <ToolStack tools={tools} />
     </div>
   );

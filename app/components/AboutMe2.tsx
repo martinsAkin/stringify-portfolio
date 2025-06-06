@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-// import './bits.css'
 import Lty from '../images/companiesLogo (1).png'
 import kawts from '../images/companiesLogo (3).png'
 import thenod from '../images/companiesLogo (2).png'
@@ -32,9 +31,9 @@ export const Slider = () => {
 
  return(
   <>
-   <div className="imageSlider">
+   <div>
        <Image src={images[index]} 
-          className="w-[30rem]"  
+          className="w-[30rem] md:w-[90%]"  
          alt="image"
         />
       
@@ -46,7 +45,7 @@ export const Slider = () => {
 export const Experience = () =>{
  return(
   <>
-    <div className="p-3.5 w-[105%] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+    <div className="p-3.5 w-[22rem] md:w-[90%] md:h-max border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white col-span-1">
       <h2 className='text-left font-brunoAce lg:pt-8 lg:text-[1rem]'>Experience</h2>
 
       <section className='pt-5 lg:pl-6'>
@@ -54,8 +53,8 @@ export const Experience = () =>{
           <div className="text-white">2024 - Now</div>
           <div className="text-left">
             <h2>Product Designer</h2>
-            <div className="flex text-gray-200">Stringify Consulting
-              <button className="remote">Remote</button>
+            <div className="flex text-gray-200 text-[15px]">Stringify Consulting
+              <button className="ml-4">Remote</button>
             </div>
           </div>
         </div>
@@ -64,8 +63,8 @@ export const Experience = () =>{
           <div className="text-white">2023 - 2024</div>
           <div className="text-left">
             <h2>Intern Product Designer</h2>
-            <div className="flex text-gray-200">Fiducia Data Service
-              <button className="remote">Hybrid</button>
+            <div className="flex text-gray-200 text-[15px]">Fiducia Data Service
+              <button className="ml-4">Hybrid</button>
             </div>
           </div>
         </div>
@@ -74,8 +73,8 @@ export const Experience = () =>{
           <div className="text-white">2022 - 2023</div>
           <div className="text-left">
             <h2>Intern Product Designer</h2>
-            <div className="flex text-gray-200">Handiworker Tech
-              <button className="remote">Remote</button>
+            <div className="flex text-gray-200 text-[15px]">Handiworker Tech
+              <button className="ml-4">Remote</button>
             </div>
           </div>
         </div>
@@ -85,7 +84,7 @@ export const Experience = () =>{
       <hr className='h-0.5 mt-4 mb-4 divider'/>
 
       <section className="companyDiv">
-         <span className="text-white lg:text-[1.5rem]">Companies I&apos;ve collaborated with</span>
+         <span className="text-white lg:text-[1rem]">Companies I&apos;ve collaborated with</span>
        <div className="flex gap-6 md:gap-9 mt-3.5 ">
          <Image src={Lty} alt="logo" className="h-[35px] w-[45px] lg:h-[50px] lg:w-[70px] lg:mt-3.5"/>
          <Image src={kawts} alt="logo" className="h-[35px] w-[45px] lg:h-[50px] lg:w-[70px]"/>
@@ -102,7 +101,7 @@ export const Experience = () =>{
 export const Education = () => {
  return(
   <>
-    <div className="p-5 w-[105%] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white">
+    <div className="p-5 w-[22rem] md:w-[90%] border-[0.1rem] border-[#3b3a3a] rounded-xl bg-[#1f1c1c] text-white col-span-1">
      <h2 className="text-left pt-2.5 font-brunoAce text-[13px] md:text-[1rem]">EDUCATION/CERTIFICATION</h2>
 
     <section className='pt-5 lg:pl-6'>

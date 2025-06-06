@@ -9,7 +9,7 @@ const brunoAce = Bruno_Ace({
 
 const AboutMe: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div className="w-[115%] md:w-[97%] h-auto p-4 mt-[1.5rem] ml-0 lg:max-w-[400px] m-auto bg-[#1a1a1a] border-[#9e9e93] rounded-[20px] shadow-gray-800 lg:z-[1] lg:mt-[-7rem] lg:ml-[1rem] row-span-2]">
       <h2 className={`${styles.heading} ${brunoAce.className}`}>
         ABOUT ME
       </h2>

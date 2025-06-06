@@ -13,16 +13,19 @@ import coloredImage3 from '../images/recentCards (1).png'
 import coloredImage4 from "../images/Project Card 9.png"
 import WorkTogether from "./LetsWorkTogetherCard"
 import ThankYou from "./ThankYou"
+import Sidebar from "./Sidebar";
+import { MenuIcon } from "./Sidebar"
 
 
 const ProjectPage = () => {
  return(
   <div className="text-white">
-                <div className="w-[15rem] pt-[2.5rem] pl-[0.5rem]">
-                <MenubarIcon />
-                </div>
+                <div className="flex justify-between gap-15rem">
+                                <Sidebar />
+                                <MenuIcon />
+                          </div>
       
-            <div className="pl-[1rem] md:pl-[2rem] pr-[0.5rem] font-poppins">
+            <div className="pl-[1rem] pr-[0.5rem] font-poppins">
                     <section className="relative">
                         <Image src={maskedImage} alt="Hero section" />
                         <div className="w-[18rem] absolute top-[10rem] left-[10%] right-[35%] font-figtree md:left-[20%] md:top-[25rem] lg:left-[25%] lg:top-[30rem] lg:w-[30rem]">
