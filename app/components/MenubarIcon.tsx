@@ -12,9 +12,8 @@ interface NextProjectBtnProps{
 export const MenubarIcon = () => {
 
  return(
-   <div className="bg-transparent w-[4rem] mt-8">
-       <Image src={menuIcon} className="w-[35px] h-[35px] md:w-[50px] md:h-[50px]" alt="menuIcon"/>
-       
+   <div className="bg-transparent w-[4rem]">
+       <Image src={menuIcon} className="w-[45px] h-[45px] md:w-[50px] md:h-[50px]" alt="menuIcon"/>
    </div>
  )
 }
@@ -62,9 +61,11 @@ type NavBArEntitiesProps = {
 
 const NavBArEntities = ({currentSection, setCurrentSection, url}: NavBArEntitiesProps) => {
  return(
-  <div>
-      <MenubarIcon />
-    <div className="flex gap-[2.5rem] mt-[-4rem] ml-[5rem] p-[2rem] md:ml-[7rem] md:gap-[5.5rem] lg:ml-[25rem] lg:justify-between lg:mt-[-5rem]">    
+  <div className="pl-4 flex items-center lg:gap-[15rem]">
+      <div>
+        <MenubarIcon />
+      </div>
+    <div className="flex gap-[2.5rem] pt-[2rem] pl-[2rem] md:pl-[7rem] md:gap-[4.5rem] lg:pt-[3rem] lg:gap-[28rem]">    
             <ToggleMode currentSection={currentSection} setCurrentSection={setCurrentSection} />
             <NextProjectBtn url={url} />
       </div>

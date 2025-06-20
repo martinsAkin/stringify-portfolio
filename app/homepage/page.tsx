@@ -3,7 +3,7 @@ import Homepage from "../components/Homepage"
 
 const page = () => {
   return (
-    <div className="bg-black">
+    <div>
      
       <Homepage />
 
